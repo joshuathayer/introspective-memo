@@ -1,6 +1,6 @@
 (ns im.macros)
 
-;; given a function, rewrite the function so that:
+;; given a `defn` expression, rewrite it such that:
 ;;  - it includes an empty dict in an atom on the fn's metadata at :cache
 ;;  - on invocation, that dict is first interrogated for a val at the
 ;;    vec of inputs
